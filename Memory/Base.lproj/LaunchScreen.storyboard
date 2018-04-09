@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,20 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TEY-cr-PLB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M75-PM-J1g">
+                                <rect key="frame" x="159" y="272" width="56" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="TEY-cr-PLB" secondAttribute="height" multiplier="375:667" id="8OV-5p-ngX"/>
-                                    <constraint firstAttribute="width" constant="375" id="H8q-7g-d9v"/>
-                                    <constraint firstAttribute="height" constant="667" id="VO0-sn-NRG"/>
+                                    <constraint firstAttribute="height" constant="48" id="Z8D-wy-gf9"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory and Match Emojis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OW-lj-hbm">
+                                <rect key="frame" x="76" y="329" width="223" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pQg-2a-pHX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.80392156862745101" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TEY-cr-PLB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6PB-cE-qu8"/>
-                            <constraint firstItem="TEY-cr-PLB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HqY-GV-zeJ"/>
-                            <constraint firstItem="TEY-cr-PLB" firstAttribute="width" secondItem="TEY-cr-PLB" secondAttribute="height" multiplier="375:667" id="zg6-Hi-gh2"/>
+                            <constraint firstItem="6OW-lj-hbm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="3SW-ug-4sU"/>
+                            <constraint firstItem="6OW-lj-hbm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="309" id="C2L-t0-7wA"/>
+                            <constraint firstItem="M75-PM-J1g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="252" id="UEw-jp-Mqx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6OW-lj-hbm" secondAttribute="bottom" constant="317" id="UMQ-n2-4Ty"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6OW-lj-hbm" secondAttribute="trailing" constant="76" id="cKk-Nu-8tl"/>
+                            <constraint firstItem="M75-PM-J1g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="d2W-ip-5ge"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M75-PM-J1g" secondAttribute="bottom" constant="347" id="d2e-Bl-LQB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M75-PM-J1g" secondAttribute="trailing" constant="160" id="hKQ-cy-EQj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -42,7 +56,4 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="BG.jpg" width="500" height="655"/>
-    </resources>
 </document>
