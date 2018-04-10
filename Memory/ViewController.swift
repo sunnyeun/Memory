@@ -18,15 +18,17 @@ class ViewController: UIViewController {
         "🤨"
     ]
     
+    //var randomIndex = Int(arc4random_uniform(UInt32(symbols.count)))
+    //var randomIndex = arc4random_uniform(UInt32(self.symbols.count))
     var selectedCard: CardButton?
     
 
-    
     //When a card is flipped
     @IBAction func flipCard(_ sender: CardButton) {
         
         // Randomize the symbols.
         let symbol = symbols[Int(arc4random() % UInt32(sender.tag))]
+        //let symbol = symbols[randomIndex]
         let senderTitle = sender.title(for: .normal)
         
         if senderTitle == nil || senderTitle == "" {
