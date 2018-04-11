@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         "🤨"
     ]
     
+    //let symbol = symbols[Int(arc4random() % UInt32(symbols.count))]
     //var randomIndex = Int(arc4random_uniform(UInt32(symbols.count)))
     //var randomIndex = arc4random_uniform(UInt32(self.symbols.count))
     var selectedCard: CardButton?
@@ -25,7 +26,7 @@ class ViewController: UIViewController {
 
     //When a card is flipped
     @IBAction func flipCard(_ sender: CardButton) {
-        
+
         // Randomize the symbols.
         let symbol = symbols[Int(arc4random() % UInt32(sender.tag))]
         //let symbol = symbols[randomIndex]
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
                     
                     let OKButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in print("You've pressed OK");
                     }
-                    
+
                     // UIAlert with OK button pop up.
                     alertController.addAction(OKButton)
                     self.present(alertController, animated: true, completion: nil)
